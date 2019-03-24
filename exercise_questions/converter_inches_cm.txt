@@ -1,0 +1,8 @@
+Write a program that will convert a value from inches to centimeters.
+
+The program will:
+ - ask the user to enter a value in inches.
+ - wait until the user enters a value and presses the "Enter" key.
+ - take the value entered by the user and calculate/convert it to centimeters.
+ - display the result in the following format:
+	[user entered value] inches is [result] centimeters
