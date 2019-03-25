@@ -3,7 +3,7 @@ Write a program that will ask the user 10 different questions whilst giving 4 an
 The program will:
  - ask the user the first question, and provide four answers to choose from.
  - wait for the user to make their choice, enter it and press the "Enter" key.
- - ask the user the seccond question, and provide four answers to choose from.
+ - ask the user the second question, and provide four answers to choose from.
  - wait for the user to make their choice, enter it and press the "Enter" key.
 	.
 	.
@@ -14,4 +14,4 @@ The program will:
  - calculate the score by giving 1 point for every correct answer by the user, and 0 points for every incorrect answer by the user.
  - sum the result for the ten questions.
  - display the sum of the result in the following format:
-	Your score is: [sum of result] out of [number of questions]
+    Your score is: [sum of result] out of [number of questions]
