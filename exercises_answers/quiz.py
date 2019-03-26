@@ -6,7 +6,7 @@
 def quiz():
 
     # Inform the user about the program
-    print('Hello there! I am a tiny little, 10-question, general science quiz that intends to test your wits.')
+    print('Hello there! I am a tiny little, 10-question, GENERAL SCIENCE QUIZ that intends to test your wits.')
     input('Press ENTER to continue')
     print(' ')
     print('I will ask you one question at a time and give you four answers to pick from, out of which, only one will be correct.')
@@ -22,6 +22,7 @@ def quiz():
     # Initialise variables and lists/arrays
     user_answers = []
     correct_answers = [4, 2, 2, 1, 4, 3, 4, 2, 3, 1]
+    sum = 0
 
     # Start the quizzing whilst checking for any errors
     try:
@@ -135,9 +136,18 @@ def quiz():
             int(input('Please type your answer and hit ENTER >>> ')))
         print(' ')
 
+        # Run a loop to compare the user's answers to the correct answers and give 1 point for every right answer
+        # Define how many times the loop should run
+        for i in range(0, len(correct_answers)):
+            # Compare the user's answer to the correct answer from the respective lists
+            if user_answers[i] == correct_answers[i]:
+                sum += 1
+            else:
+                sum += 0
+
         # Print result
-        print(user_answers)
-        print(correct_answers)
+        print('Your score is: ' + str(sum)
+              + ' out of ' + str(len(user_answers)))
         input('Press Enter to exit ')
 
     # Run this bit of code if an error is encountered
